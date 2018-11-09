@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<profile name="Bojan Default" version="2018-10-15 13:02:23" app="S3D-Software 4.0.1">
+<profile name="Bojan Default" version="2018-11-09 19:09:24" app="S3D-Software 4.0.1">
   <baseProfile>Wanhao Duplicator i3(2) (modified)</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
@@ -14,7 +14,7 @@
     <retractionDistance>0.7</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
     <retractionZLift>0</retractionZLift>
-    <retractionSpeed>2400</retractionSpeed>
+    <retractionSpeed>3000</retractionSpeed>
     <useCoasting>0</useCoasting>
     <coastingDistance>0.2</coastingDistance>
     <useWipe>0</useWipe>
@@ -22,7 +22,7 @@
   </extruder>
   <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.2</layerHeight>
-  <topSolidLayers>4</topSolidLayers>
+  <topSolidLayers>3</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
   <perimeterOutlines>3</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
@@ -33,7 +33,7 @@
   <spiralVaseMode>0</spiralVaseMode>
   <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
   <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
-  <firstLayerUnderspeed>0.5</firstLayerUnderspeed>
+  <firstLayerUnderspeed>0.51</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
   <raftTopLayers>3</raftTopLayers>
@@ -45,32 +45,32 @@
   <useSkirt>1</useSkirt>
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
-  <skirtOutlines>2</skirtOutlines>
+  <skirtOutlines>1</skirtOutlines>
   <skirtOffset>4</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
   <primePillarLocation>7</primePillarLocation>
-  <primePillarSpeedMultiplier>1</primePillarSpeedMultiplier>
+  <primePillarSpeedMultiplier>0.99</primePillarSpeedMultiplier>
   <useOozeShield>0</useOozeShield>
   <oozeShieldExtruder>999</oozeShieldExtruder>
   <oozeShieldOffset>2</oozeShieldOffset>
   <oozeShieldOutlines>1</oozeShieldOutlines>
   <oozeShieldSidewallShape>1</oozeShieldSidewallShape>
   <oozeShieldSidewallAngle>30</oozeShieldSidewallAngle>
-  <oozeShieldSpeedMultiplier>1</oozeShieldSpeedMultiplier>
+  <oozeShieldSpeedMultiplier>0.97</oozeShieldSpeedMultiplier>
   <infillExtruder>0</infillExtruder>
-  <internalInfillPattern>Rectilinear</internalInfillPattern>
+  <internalInfillPattern>Grid</internalInfillPattern>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>35</infillPercentage>
+  <infillPercentage>50</infillPercentage>
   <outlineOverlapPercentage>25</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>125</infillExtrusionWidthPercentage>
   <minInfillLength>5</minInfillLength>
   <infillLayerInterval>1</infillLayerInterval>
   <internalInfillAngles>45,-45</internalInfillAngles>
-  <overlapInternalInfillAngles>0</overlapInternalInfillAngles>
+  <overlapInternalInfillAngles>1</overlapInternalInfillAngles>
   <externalInfillAngles>45,-45</externalInfillAngles>
-  <generateSupport>1</generateSupport>
+  <generateSupport>0</generateSupport>
   <supportExtruder>0</supportExtruder>
   <supportInfillPercentage>30</supportInfillPercentage>
   <supportExtraInflation>0</supportExtraInflation>
@@ -84,7 +84,7 @@
   <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
   <supportType>0</supportType>
   <supportGridSpacing>4</supportGridSpacing>
-  <maxOverhangAngle>60</maxOverhangAngle>
+  <maxOverhangAngle>45</maxOverhangAngle>
   <supportAngles>0</supportAngles>
   <temperatureController name="Primary Extruder">
     <temperatureNumber>0</temperatureNumber>
@@ -146,25 +146,25 @@
   <baudRateOverride>115200</baudRateOverride>
   <overridePrinterModels>1</overridePrinterModels>
   <printerModelsOverride></printerModelsOverride>
-  <startingGcode>; Start GCode,G21 ; metric values,G90 ; absolute positioning,M82 ; set extruder to absolute mode,M107 ; start with the fan off,G28 X0 Y0 ; move X/Y to min endstops,G28 Z0 ; move Z to min endstops,G1 Z15.0 F80 ; move the platform down 15mm,G92 E0 ; zero the extruded length,G1 F200 E3 ; extrude 3mm of feed stock,G92 E0 ; zero the extruded length again,G1 F80,;Put printing message on LCD screen,M117 Printing...</startingGcode>
+  <startingGcode>; Start GCode,G21 ; metric values,G90 ; absolute positioning,M82 ; set extruder to absolute mode,M107 ; start with the fan off,G28 X0 Y0 ; move X/Y to min endstops,G28 Z0 ; move Z to min endstops,M420 S1 ; retrieve bed mesh,G1 Z15.0 F80 ; move the platform down 15mm,G92 E0 ; zero the extruded length,G1 F200 E3 ; extrude 3mm of feed stock,G92 E0 ; zero the extruded length again,G1 F80,;Put printing message on LCD screen,M117 Printing...</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <retractionGcode></retractionGcode>
   <toolChangeGcode></toolChangeGcode>
-  <endingGcode>; End GCode,M104 S0 ; extruder heater off,M106 S0 ; turn off extruder fan,M140 S0  ; heated bed heater off (if you have it),G91 ; relative positioning,G1 E-1 F300 ; retract the filament a bit before lifting the nozzle, to release some of the pressure,G1 Z+0.5 E-5 X-20 Y-20 F80 ; move Z up a bit and retract filament even more,G28 X0 Y0 ; move X/Y to min endstops, so the head is out of the way,M84 ; steppers off,G90 ; absolute positioning</endingGcode>
+  <endingGcode>; End GCode,M104 S0 ; extruder heater off,M106 S0 ; turn off extruder fan,M140 S0  ; heated bed heater off (if you have it),;G91 ; relative positioning,;G1 E-1 F300 ; retract the filament a bit before lifting the nozzle to release some of the pressure,;G1 Z+0.5 E-5 X-20 Y-20 F80 ; move Z up a bit and retract filament even more,G28 X0 Y0 ; move X/Y to min endstops so the head is out of the way,M84 ; steppers off,;G90 ; absolute positioning</endingGcode>
   <exportFileFormat>gcode</exportFileFormat>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
   <postProcessing></postProcessing>
   <defaultSpeed>3000</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
-  <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
+  <solidInfillUnderspeed>0.79</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
   <rapidXYspeed>4800</rapidXYspeed>
   <rapidZspeed>1002</rapidZspeed>
   <minBridgingArea>50</minBridgingArea>
   <bridgingExtraInflation>0</bridgingExtraInflation>
   <bridgingExtrusionMultiplier>1</bridgingExtrusionMultiplier>
-  <bridgingSpeedMultiplier>1</bridgingSpeedMultiplier>
+  <bridgingSpeedMultiplier>0.98</bridgingSpeedMultiplier>
   <useFixedBridgingAngle>0</useFixedBridgingAngle>
   <fixedBridgingAngle>0</fixedBridgingAngle>
   <applyBridgingToPerimeters>0</applyBridgingToPerimeters>
@@ -174,7 +174,7 @@
   <useMinPrintHeight>0</useMinPrintHeight>
   <minPrintHeight>0</minPrintHeight>
   <useMaxPrintHeight>0</useMaxPrintHeight>
-  <maxPrintHeight>0</maxPrintHeight>
+  <maxPrintHeight>20</maxPrintHeight>
   <useDiaphragm>0</useDiaphragm>
   <diaphragmLayerInterval>20</diaphragmLayerInterval>
   <robustSlicing>1</robustSlicing>
@@ -242,10 +242,10 @@
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
     <layerHeight>0.2</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
+    <topSolidLayers>3</topSolidLayers>
     <bottomSolidLayers>3</bottomSolidLayers>
     <skirtLayers>1</skirtLayers>
-    <infillPercentage>35</infillPercentage>
+    <infillPercentage>50</infillPercentage>
     <supportInfillPercentage>30</supportInfillPercentage>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
