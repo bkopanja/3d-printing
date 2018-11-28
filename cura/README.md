@@ -1,6 +1,6 @@
 # Important
 
-Script named "AddUserPermissionsCura.sh" is something that i used on Linux Mint 19 and I guess that it will work for most similar distribution (Ubuntu/Debian etc) and it's made for currently latest version of Cura which is 3.6
+Script named "AddUserPermissionsCura.sh" is something that I used on Linux Mint 19 and I guess that it will work for most similar distribution (Ubuntu/Debian etc) if not for any Linux distro (i guess the locations are pretty standard) and it's made for currently latest version of Cura which is 3.6
 
 I had issues with running the AppImage of cura without this (it was working only for `root` user) so if you have issues with starting Cura on a Linux or if it can't wirte config/profile files this is probably the solution you need.
 
