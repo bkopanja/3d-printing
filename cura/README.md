@@ -1,7 +1,9 @@
 Please note that this folder contains things that work for me.
 
-I have a Wahnao i3 Duplicator v2.1 upgraded to RAMPS1.4 (so this is not Melzi board)
+I have a Wahnao Duplicator i3 v2.1 upgraded to RAMPS1.4 (so this is not Melzi board)
 with MicroSwiss all metal hotend (so retraction is set super low compared
 to someone with a bowden extruder or a stock one for this particular 3d printer)
 
 If you have similar setup like I do, this might work for you.
+
+Also, script named "AddUserPermissionsCura.sh" is something that i used on Linux Mint 19 and I guess that it will work for most similar distribution (Ubuntu/Debian etc) and it's made for currently latest version of Cura which is 3.6
