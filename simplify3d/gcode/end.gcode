@@ -1,10 +1,15 @@
 ; End GCode
-M104 S0 ; extruder heater off
-M106 S0 ; turn off extruder fan
-M140 S0  ; heated bed heater off (if you have it)
-;G91 ; relative positioning
-;G1 E-1 F300 ; retract the filament a bit before lifting the nozzle to release some of the pressure
-;G1 Z+0.5 E-5 X-20 Y-20 F80 ; move Z up a bit and retract filament even more
-G28 X0 Y0 ; move X/Y to min endstops so the head is out of the way
-M84 ; steppers off
-;G90 ; absolute positioning
+M104 S0; turn off extruder
+M140 S0 ; turn off bed
+G1 X0 Y180 F3000 ; prepare for part removal
+M84 ; disable motors
+M106 S0 ; turn off fan
+
+M300 S294 P200 ;D4: 294
+M300 S588 P200 ;D5: 588
+M300 S440 P200 ;A4: 440
+M300 S392 P200 ;G4: 392
+M300 S784 P200 ;G5: 784
+M300 S440 P200 ;A4: 440
+M300 S740 P200 ;F#5: 740
+M300 S440 P200 ;A4: 440
