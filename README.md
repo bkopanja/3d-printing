@@ -1,3 +1,8 @@
+# My Links
+
+Thingiverse: https://www.thingiverse.com/bkopanja/about
+MyMiniFactory: https://www.myminifactory.com/users/bkopanja
+
 # Disclamer
 
 Please note that this folder contains things that work for me.
