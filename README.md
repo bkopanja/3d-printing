@@ -4,6 +4,12 @@ Thingiverse: https://www.thingiverse.com/bkopanja/about
 
 MyMiniFactory: https://www.myminifactory.com/users/bkopanja
 
+# Useful Links
+
+Ender 3 all in one enclosure: https://github.com/BladeScraper-Designs/Ender-3-All-in-One-Enclosure
+
+Ender 3 Slic3rPE profiles: https://github.com/sn4k3/Ender3
+
 # Disclamer
 
 Please note that this folder contains things that work for me.
